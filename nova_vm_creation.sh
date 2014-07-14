@@ -1,21 +1,21 @@
 #!/bin/bash
 
 # nova
-export NOVA_USERNAME=admin   #ログイン時のID
-export NOVA_PROJECT_ID=scale  #テナント名
-export NOVA_PASSWORD=nova   #ログイン時のパスワード
-export NOVA_HOST=controller01   #OpenStackコントローラーの名前/IP
+export NOVA_USERNAME=admin  # Login User name
+export NOVA_PROJECT_ID=scale  # Tenant name (Project name)
+export NOVA_PASSWORD=nova   # Login password
+export NOVA_HOST=controller01   #OpenStack Controller name or IP
 
 # required params
 
-network_name="1_scale"  #接続するネットワーク名
-flavor_name="m1.tiny"   #利用するフレーバー名
-image_name="Ubuntu12.04LTS"  #利用するイメージ名
-creation_num=50   #作成する数
-vm_name_prefix="Test_VM_"  #作成する仮想マシンの名前のプレフィックス値(この値の後ろに数字がつきます)
+network_name="1_scale"  # Specify the network name
+flavor_name="m1.tiny"   # Specify Flavor name
+image_name="Ubuntu12.04LTS"  # Specify Glance image name
+creation_num=50   #number of VMs to be created
+vm_name_prefix="Test_VM_"  # Pre-fix VM name for the auto-creation (sequential number is added after this value for each VM creation)
 
 #--------------------------------------------------------
-#------------------以下、変更不要------------------------
+#--------------No need to alter below here --------------
 #--------------------------------------------------------
 # nova
 export NOVA_API_KEY=$NOVA_PASSWORD
