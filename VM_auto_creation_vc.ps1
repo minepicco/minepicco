@@ -1,7 +1,7 @@
 #Add-PSSnapin VMWare.VimAutomation.Core
 Connect-VIServer -Server <vcaddress> -User <vcuser> -Password <vcpassword>
 
-$sourceVM = Get-VM "pg2_template" | Get-View
+$sourceVM = Get-VM "vm_template" | Get-View
 $i=1
 $u=201
 $cloneFolder = $sourceVM.parent
