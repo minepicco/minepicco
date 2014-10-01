@@ -18,9 +18,6 @@ else
    fi
 fi
 
-
-#!/bin/bash
-
 # nova
 export NOVA_USERNAME=admin  # Login User name
 export NOVA_PROJECT_ID=scale  # Tenant name (Project name)
