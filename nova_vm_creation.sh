@@ -17,6 +17,7 @@ vm_name_prefix="Test_VM_"  # Pre-fix VM name for the auto-creation (sequential n
 #--------------------------------------------------------
 #--------------No need to alter below here --------------
 #--------------------------------------------------------
+
 # nova
 export NOVA_API_KEY=$NOVA_PASSWORD
 export NOVA_URL=http://$NOVA_HOST:5000/v2.0/
